@@ -1,6 +1,5 @@
 package com.daviondk.mt;
 
-import guru.nidi.graphviz.attribute.Font;
 import guru.nidi.graphviz.attribute.Rank;
 import guru.nidi.graphviz.engine.Format;
 import guru.nidi.graphviz.engine.Graphviz;
