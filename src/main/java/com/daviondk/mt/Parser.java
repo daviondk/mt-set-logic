@@ -140,7 +140,7 @@ public class Parser {
     private Tree W() {
         switch (lexicalAnalyzer.currentToken()) {
             case NOT:
-                return new Tree("W", List.of(not(), X()));
+                return new Tree("W", List.of(not(), W()));
             case VARIABLE:
             case LPAREN:
                 return new Tree("W", Collections.singletonList(X()));

@@ -48,4 +48,10 @@ public class SetLogicTest {
         Tree tree = parser.parse("a xor b and c in not (d or e)");
         visualizer.visualize(tree, "priority.png", 1000);
     }
+
+    @Test
+    public void notNot() {
+        Tree tree = parser.parse("not not a");
+        visualizer.visualize(tree, "notNot.png", 1000);
+    }
 }
