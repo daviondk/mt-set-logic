@@ -28,7 +28,7 @@ public class LexicalAnalyzer {
     public Token nextToken() {
         if (!scanner.hasNext()) {
             currentTokenString = "";
-            return Token.END;
+            return currentToken = Token.END;
         }
         currentTokenString = scanner.next();
         switch (currentTokenString) {
