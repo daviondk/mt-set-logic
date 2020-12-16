@@ -49,7 +49,8 @@ public class Parser {
         return buildSimpleTree(
                 Collections.emptyList(),
                 Collections.singletonList(Token.VARIABLE),
-                Collections.emptyList(), "VARIABLE", true);
+                Collections.emptyList(),
+                "VARIABLE_" + lexicalAnalyzer.currentTokenString(), true);
     }
 
     private Tree lParen() {
